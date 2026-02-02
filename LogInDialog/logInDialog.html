@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="logInDialog.css">
+</head>
+<body>
+    <div id="dialog">
+        <div id="dialogHeader">
+            <b>Log in:</b>
+        </div>
+        <div id="dialogContent">
+            <p>Username:</p>
+            <input id="usernameBox">
+            <p>Password:</p>
+            <div id="passwordBoxDiv">
+                <input id="passwordBox">
+            </div>
+        </div>
+        <div id="logInButtonDiv">
+            <button id="logInButton" onclick="logIn()">Log In</button>
+        </div>
+    </div>
+    <div id="sideBar">
+        <div class="containerSB">
+            <button class="buttonsSB" onclick="openDialog()">Open log in dialog</button>
+            <!-- <button class="buttonsSB" onclick="playSound()">Poenie chappen</button> -->
+        </div>
+    </div>
+    <div class="defaultMain" id="mainScreen">
+        <h1>Klik in de sidebar op inloggen om verder te gaan!</h1>
+    </div>
+    <div class="defaultMain" id="loggedInScreen">
+        <h1 id="nameTag">Hallo, (uw naam)</h1>
+    </div>
+    <script src="logInDialog.js"></script>
+</body>
+</html>
